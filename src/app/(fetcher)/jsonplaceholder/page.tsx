@@ -19,7 +19,6 @@ const getData = async () => {
   });
 
   if (!res.ok) {
-    // TODO: Error handling here
     throw new Error("something wicked happened");
   }
 

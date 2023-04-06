@@ -2,7 +2,7 @@
 // "use client" = Client Side Rendering
 // Can use the normal hooks
 
-// Experimental "use" hooks from react
+// Experimental "use" hooks from react 18
 import { use } from "react";
 import type { Color } from "@/app/api/reqresin/route";
 

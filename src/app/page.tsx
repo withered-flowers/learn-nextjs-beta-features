@@ -41,6 +41,14 @@ export default function Home() {
               Formulir Page
             </Link>
           </li>
+          <li>
+            <Link
+              href={"/loader-example"}
+              className="underline text-blue-400 hover:text-blue-700 transition-colors duration-300"
+            >
+              Loader Example Page
+            </Link>
+          </li>
         </ul>
       </section>
     </main>
