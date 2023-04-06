@@ -1,7 +1,10 @@
+// This Component is the fallback's Component for <Suspense>
 const LoaderComponent = () => {
   return (
     <>
-      <p>This is a suspense fallback (loader) for University fetcher ...</p>
+      <p className="animate-pulse text-blue-600">
+        This is a suspense fallback (loader) for University fetcher ...
+      </p>
     </>
   );
 };

@@ -1,4 +1,6 @@
-// In this example we will try to use Suspense for loader
+// In this example we will try to use Suspense
+// But we're not using <Suspense> Component at all !
+// (Since this will be wrapped in loading.tsx in App Router)
 type University = {
   country: string;
   name: string;
@@ -21,6 +23,11 @@ const getData = async () => {
   return res.json() as Promise<University[]>;
 };
 
+// While this Component is waiting for fetching completed
+// Suspense (loding.tsx) will replace this Component
+// After fetching done,
+// (if success) - Suspense (loading.tsx) will be replaced with this component
+// (if error) - Suspense (loading.tsx) will be replaced with ErrorBoundary (error.tsx), if exists
 const LoaderExamplePage = async () => {
   const universities = await getData();
 
