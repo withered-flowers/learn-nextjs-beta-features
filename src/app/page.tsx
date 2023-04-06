@@ -33,6 +33,14 @@ export default function Home() {
               Reqresin Page - (Client Fetch)
             </Link>
           </li>
+          <li>
+            <Link
+              href={"/formulir"}
+              className="underline text-blue-400 hover:text-blue-700 transition-colors duration-300"
+            >
+              Formulir Page
+            </Link>
+          </li>
         </ul>
       </section>
     </main>

@@ -1,15 +1,12 @@
-import { NextResponse } from "next/server";
-
-const postData = () => {
-  return {};
-};
+import CustomForm from "./CustomForm";
 
 const FormulirPage = () => {
   return (
-    <main className="p-4">
-      <h1>Halaman Formulir</h1>
+    <main className="p-4 bg-gray-100 min-w-full min-h-screen">
+      <p className="text-xl font-semibold mb-4">Formulir Page</p>
 
-      <form></form>
+      {/* This will be interactive on client */}
+      <CustomForm />
     </main>
   );
 };
